@@ -1,0 +1,211 @@
+
+/*Återanvänd css-kod från Moment 1 och 2*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: #D2665A;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #F2B28C;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+main {
+    background-color: #F6DED8;
+    padding: 1em;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    background-color: #f6ded860;
+    padding: 1em;
+    margin-bottom: -3px;
+    font-size: 1.2em;
+    transition: background-color 0.4s ease;
+}
+
+.current {
+    background-color: #F6DED8;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+li:hover {
+    background-color: #f6ded8b7;
+}
+
+.nav-left {
+    border-top-left-radius: 3px;
+}
+
+.nav-right {
+    border-top-right-radius: 3px;
+}
+
+form {
+    padding-bottom: 1em;
+}
+
+input {
+    width: 50%;
+    height: 25px;
+    margin: 0.3em;
+}
+
+label {
+    margin: 0.3em;
+}
+
+button,
+.button {
+    margin: 0.3em;
+    margin-top: 1em;
+    width: 20%;
+    height: 40px;
+    background-color: #F2B28C;
+    border: solid #000000 1px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+}
+
+button:hover,
+.button:hover {
+    box-shadow: none;
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
+
+.button {
+    margin-left: 15px;
+}
+
+.button a {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    color: #000000;
+    text-decoration: none;
+}
+
+form{
+    margin-left: 2em;
+}
+
+input {
+    width: 50%;
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+textarea {
+    width: 50%;
+}
+
+article{
+    background-color: #f2b18c77;
+    border-radius: 3px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    margin: 2em;
+    padding: 1em;
+
+}
+
+article p{
+    line-height: 1em;
+}
+
+article h3{
+    margin-bottom: -0.7em;
+}
+
+.about-container {
+    background-color: rgb(243, 243, 243);
+    padding: 0.1em 1em 0.1em 1em;
+    margin: 1em;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.107);
+}
+
+
+@media (max-width: 450px) {
+
+
+    h2 {
+        font-size: 1em;
+    }
+
+    nav ul li {
+        font-size: 0.5em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    .button a {
+        font-size: 9px;
+    }
+
+
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+
+    .button a {
+        font-size: 0.7em;
+    }
+
+    nav ul li {
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+
+
+    .button a {
+        font-size: 0.7em;
+    }
+
+}
