@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/app.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lägg till i CV</title>
+</head>
+
+<!-- Återanvänd HTML-kod från moment 1 och moment 2 -->
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>DT207G - Moment 3</h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="nav-left current"><a href="/">Mitt CV</a></li>
+                <li><a href="/form">Lägg till i CV</a></li>
+                <li class="nav-right"><a href="/about">Om sidan</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <main>
+            <h2>Lägg till i CV</h2>
+
+            <div id="errorMessage"></div>
+
+            <form method="post">
+                <label for="company_name">Namn på arbetsplats:</label>
+                <br>
+                <input type="text" name="company_name" id="company_name">
+                <br>
+                <label for="job_title">Jobbtitel:</label>
+                <br>
+                <input type="text" name="job_title" id="job_title">
+                <br>
+                <label for="location">Plats:</label>
+                <br>
+                <input type="text" name="location" id="location">
+                <br>
+                <label for="start_date">Startdatum:</label>
+                <br>
+                <input type="date" name="start_date" id="start_date">
+                <br>
+                <label for="end_date">Slutdatum:</label>
+                <br>
+                <input type="date" name="end_date" id="end_date">
+                <br>
+                <label for="description">Exempel på arbetsuppgifter:</label>
+                <br>
+                <textarea rows="5" name="description" id="description"></textarea>
+                <br>
+                <button type="submit" id="submitButton">Lägg till</button>
+            </form>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>DT207G Datateknik GR (B), Backend-baserad webbutveckling - Mittuniversitetet</p>
+            <p>Laboration: Moment 3</p>
+            <p>Av: Caroline Jungefalk Palmgren</p>
+        </footer>
+    </div>
+</body>
+
+</html>
