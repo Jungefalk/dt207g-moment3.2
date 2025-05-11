@@ -1,8 +1,10 @@
 
 /**
  * Åeranvänd JavaScript kod från moment 2.
+ * 
+ * Ändringar som gjorts i koden:
+ *  - Bytt webbtjänst till MongoDB Atlas
  */
-
 
 //Hämta id:n
 let workExperienceEl = document.getElementById("work_experience");
