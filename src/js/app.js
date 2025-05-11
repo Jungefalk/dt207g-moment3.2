@@ -68,7 +68,7 @@ function readData(data) {
         <p>${data[i].start_date}</p>
         <h3>Slutdatum:</h3>
         <p>${data[i].end_date}</p>
-        <h3>Arbetsbeskrivnning:</h3>
+        <h3>Arbetsbeskrivning:</h3>
         <p>${data[i].description}</p>
         <button>Ta bort</button>
 `;
@@ -89,6 +89,18 @@ function readData(data) {
 //Posta data
 async function postData() {
 
+    //Töm felmeddelande
+    errorMessageEl.innerHTML = "";
+
+    //kontrollera att inputfälten inte är tomma
+
+    if (companyNameEl.value === "" || jobTitleEl.value === "" || locationEl.value === "" || startDateEl.value === "" || endDateEl.value === "" || descriptionEl.value === "") {
+        let errorMessage = document.createElement("p");
+        let errorText = document.createTextNode("Du behöver fylla i samtliga fält");
+        errorMessage.appendChild(errorText);
+        errorMessageEl.appendChild(errorMessage);
+    };
+
     //Lagra värden från inputfält
     let newExpreience = {
         company_name: companyNameEl.value,
@@ -99,9 +111,6 @@ async function postData() {
         description: descriptionEl.value
     };
 
-    //Töm felmeddelande
-    errorMessageEl.innerHTML = "";
-
     //Töm inputfält
     companyNameEl.value = "";
     jobTitleEl.value = "";
@@ -109,16 +118,6 @@ async function postData() {
     startDateEl.value = "";
     endDateEl.value = "";
     descriptionEl.value = "";
-
-    //kontrollera att inputfälten inte är tomma
-
-    if (companyNameEl.value === "" && jobTitleEl.value === "" && locationEl.value === "" && startDateEl.value === "" && endDateEl.value === "" && descriptionEl.value === "") {
-        let errorMessage = document.createElement("p");
-        let errorText = document.createTextNode("Du behöver fylla i samtliga fält");
-        errorMessage.appendChild(errorText);
-        errorMessageEl.appendChild(errorMessage);
-       
-    };
 
 
     //Postanrop
