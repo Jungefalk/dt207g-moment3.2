@@ -166,6 +166,16 @@ article h3{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.107);
 }
 
+#errorMessage{
+    color: red;
+    font-weight: 600;
+    margin-left: 2.3em;
+}
+
+h2{
+    margin-left: 1.5em;
+}
+
 
 @media (max-width: 450px) {
 
