@@ -99,6 +99,7 @@ async function postData() {
         let errorText = document.createTextNode("Du behöver fylla i samtliga fält");
         errorMessage.appendChild(errorText);
         errorMessageEl.appendChild(errorMessage);
+        return;
     };
 
     //Lagra värden från inputfält
