@@ -112,15 +112,6 @@ async function postData() {
         description: descriptionEl.value
     };
 
-    //Töm inputfält
-    companyNameEl.value = "";
-    jobTitleEl.value = "";
-    locationEl.value = "";
-    startDateEl.value = "";
-    endDateEl.value = "";
-    descriptionEl.value = "";
-
-
     //Postanrop
     try {
         const response = await fetch(`https://dt207g-moment3-1.onrender.com/work_experience`, {
@@ -135,6 +126,15 @@ async function postData() {
         }
 
         const result = await response.json();
+
+        //Töm inputfält
+        companyNameEl.value = "";
+        jobTitleEl.value = "";
+        locationEl.value = "";
+        startDateEl.value = "";
+        endDateEl.value = "";
+        descriptionEl.value = "";
+
         getData();
 
 
