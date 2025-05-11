@@ -166,10 +166,15 @@ article h3{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.107);
 }
 
-#errorMessage{
-    color: red;
+#errorMessage, #successMessage{
     font-weight: 600;
     margin-left: 2.3em;
+}
+#errorMessage{
+    color: red;
+}
+#successMessage{
+    color: rgb(28, 161, 28);
 }
 
 h2{

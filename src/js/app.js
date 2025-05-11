@@ -16,6 +16,7 @@ let endDateEl = document.getElementById("end_date");
 let descriptionEl = document.getElementById("description");
 let buttonEl = document.getElementById("submitButton");
 let errorMessageEl = document.getElementById("errorMessage");
+let successMessageEl = document.getElementById("successMessage")
 
 //Händelselyssnare
 window.addEventListener("load", init);
@@ -91,8 +92,10 @@ function readData(data) {
 //Posta data
 async function postData() {
 
-    //Töm felmeddelande
+    //Töm meddelande
     errorMessageEl.innerHTML = "";
+    successMessageEl.innerHTML = "";
+
 
     //kontrollera att inputfälten inte är tomma
 
@@ -136,6 +139,11 @@ async function postData() {
         startDateEl.value = "";
         endDateEl.value = "";
         descriptionEl.value = "";
+
+        let successMessage = document.createElement("p");
+        let successText = document.createTextNode("Arbetserfarenhet tillagd till CV:t!");
+        successMessage.appendChild(successText);
+        successMessageEl.appendChild(successMessage);
 
         getData();
 
