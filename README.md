@@ -4,6 +4,9 @@
 Detta är en frontendapplikation för en labb i kursen backend-baserad webbutveckling.  
 Syftet med labben är att förstå hur man kan bygga en webbtjänst med en NoSQL-databas, i detta fallet MongoDB, och hur man använder sig av CRUD-operationer för att hämta, lägga till, uppdatera och ta bort data från databsen.
 
+### Länk till API
+[https://dt207g-moment3-1.onrender.com/work_experience](https://dt207g-moment3-1.onrender.com/work_experience)
+
 ### Om sidan
 
 Syftet med webbplatsen är att kunna lagra arbetserfarenheter i ett CV. Applikationen är byggd med npm och parcel och gör anrop till en webbtjänst som använder MongoDB Atlas som molndatabas. 
