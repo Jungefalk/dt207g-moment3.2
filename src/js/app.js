@@ -4,6 +4,7 @@
  * 
  * Ändringar som gjorts i koden:
  *  - Bytt webbtjänst till MongoDB Atlas
+ *  - Lagt till bekräftelse vid lyckat POST - anrop
  */
 
 //Hämta id:n

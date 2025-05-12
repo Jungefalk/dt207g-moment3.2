@@ -32,12 +32,41 @@
 
                 <section>
                     <h2>Om sidan</h2>
-                    <p></p>
+                    <p>Syftet med webbplatsen är att kunna lagra arbetserfarenheter i ett CV
+
+                        Applikationen är byggd med npm och parcel och gör anrop till en webbtjänst som använder MongoDB
+                        som är en NoSQL-databas.
+                    </p>
+                    <h3>Funktion:</h3>
+                    <ul>
+                        <li>När Applikationen startat görs ett GET-anrop mot API:et. De befintliga posterna i databasen
+                            läses då ut till skärmen.</li>
+                        <li>Användaren kan lägga till abetserfarenheter via ett formulär. Ett POST-anrop görs mot
+                            databasen lägger
+                            till den nya posten. Skulle formuläret ej vara korrekt ifyllt får användare ett
+                            felmeddelande och annars en bekräftelse på att posten är tillagt till CV:t.</li>
+                        <li>Det går att ta bort poster från databasen genom att trycka på "Ta bort" - knappen. Postens
+                            id skickas till ett DELETE - anrop och tar bort den aktuella posten.</li>
+                    </ul>
                 </section>
 
                 <section>
                     <h2>Slutsats</h2>
-                    <p></p>
+                    <p>Jag upplevde att det var väldigt smidigt att använda MongoDB som databas. Speciellt via molnet
+                        med MongoDB Atlas. Via Atlas fanns det ett grafiskt gränssnitt likt
+                        Compass där man
+                        kunde skapa collections och dokument. Det var enkelt att ansluta till databasen med en URI och
+                        lösenord. Jag förstår dock att man kanske inte ska låta lösenordet i URI:n ligga öppet så som
+                        jag
+                        har gjort - att dölja länken på något sätt hade varit klokare. Jag upplever att
+                        man får mycket gratis med schemas, exempelvis felhantering, genom att skapa ett objekt för varje
+                        post och lägga till
+                        "required" på de fält som är obligatoriska. Jag upplevde att det var
+                        smidigare med NoSQL -åtminstone MongoDB- än SQL eftersom det krävdes mindre kod. Men inser att
+                        man
+                        kanske får mer kontroll
+                        med en SQL-databas och SQL-frågor.
+                    </p>
                 </section>
             </div>
 
